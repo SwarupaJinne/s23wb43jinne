@@ -6,7 +6,10 @@ block content
   div(class="container-fluid")
   div(class="row")
    each i,index  in mango
-    div(class="col-sm-2" onclick =`buy(${index})`) #{i.mango_type}, #{i.mango_quantity}, #{i.mango_price}
+    div(class="col-sm-2" onclick=`buy(${index})`)
+                p Mango_Type:  #{i.mango_type} 
+                p Mango_Quantity: #{i.mango_quantity}
+                p Mango_Price: #{i.mango_price}
     script.
         function buy(a)
         {
